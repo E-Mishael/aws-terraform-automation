@@ -117,8 +117,8 @@ The Terraform workflow runs in three commands:
 
 The plan output showed 2 resources to add (the S3 bucket and DynamoDB table) with 0 changes and 0 destroys. After apply, both resources were confirmed created with the correct names and configuration.
 
-![Terraform Init and Plan](/terraform_init__plan__apply1.png)
-![Terraform Apply Complete](/terraform_init__plan__apply2.png)
+![Terraform Init and Plan](/terraform_init_plan__apply1.png)
+![Terraform Apply Complete](/terraform_init_plan__apply2.png)
 
 ---
 
