@@ -162,57 +162,6 @@ A single Bash script (`deploy.sh`) ties the entire pipeline together. Running `.
 
 ---
 
-## How to Run This Yourself
-
-### Prerequisites
-
-- AWS account with an IAM user configured via `aws configure`
-- Terraform installed: [terraform.io/downloads](https://developer.hashicorp.com/terraform/downloads)
-- Python 3.x installed with boto3: `pip install boto3`
-- Git Bash installed (Windows) or any Bash shell (Linux/Mac)
-
-### Steps
-
-```bash
-# Clone the repo
-git clone https://github.com/E-Mishael/aws-terraform-automation
-cd aws-terraform-automation/infra-automation
-
-# Make the deploy script executable
-chmod +x deploy.sh
-
-# Run the full pipeline
-./deploy.sh
-```
-
-Expected output:
-```
-DevOps Automation Pipeline
-==========================
-[1/4] Initializing Terraform...
-[2/4] Planning infrastructure...
-[3/4] Deploying infrastructure...
-[4/4] Validating infrastructure...
-
-=== Infrastructure Validation Report ===
-[PASS] S3 bucket exists and is accessible.
-[PASS] DynamoDB table is ACTIVE
-
-Result: ALL CHECKS PASSED
-Pipeline complete!
-```
-
-### Cleaning Up
-
-To destroy all AWS resources created by this project and avoid charges:
-
-```bash
-terraform destroy
-```
-
-Type `yes` when prompted to confirm.
-
----
 
 ## Lessons Learned
 
