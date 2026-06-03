@@ -123,7 +123,8 @@ The plan output showed 2 resources to add (the S3 bucket and DynamoDB table) wit
 ---
 
 ### Step 5 — Validating with Python
-(/pyhtonValidation_script.png)
+<img width="1918" height="1078" alt="pyhtonValidation script" src="https://github.com/user-attachments/assets/81a46a31-45ae-469c-a130-6eb475c914ad" />
+
 
 Instead of manually checking the AWS console, a Python script using the boto3 SDK validates each resource programmatically and produces a PASS/FAIL report.
 
